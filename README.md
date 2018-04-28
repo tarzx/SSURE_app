@@ -1,4 +1,5 @@
-#SSURE_app
-#MSc Project at NUIM
+SSURE_app
+
+MSc Project at NUIM
 
 Android Mobile App
