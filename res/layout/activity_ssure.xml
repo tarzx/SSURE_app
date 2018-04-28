@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context="cs.nuim.ssure.SSUREActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:baselineAligned="false"
+            android:textAlignment="center" >
+
+	        <TextView
+	            android:id="@+id/TextSPM"
+	            android:layout_width="match_parent"
+	            android:layout_height="150dp"
+	            android:gravity="center"
+	            android:text="-- SPM"
+	            android:textAlignment="center"
+	            android:textColor="#FF0000"
+	            android:textSize="72sp" />
+		
+	    </TableRow>
+
+	    <TableRow
+	        android:layout_height="wrap_content"
+	        android:background="#000000"
+	        android:baselineAligned="false"
+	        android:gravity="right" >
+            
+	        <TextView
+	            android:id="@+id/TextBPM"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:gravity="right"
+	            android:text="Song: -- BPM on -- SPM "
+	            android:textColor="#FFFFFF"
+	            android:textSize="24sp" />
+
+	    </TableRow>
+        <TableRow
+            android:textAlignment="center"
+            android:gravity="center" >
+	        
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="20dp"
+	            android:background="#FFFFFF"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+            	
+	           	<ImageButton
+	           	    android:id="@+id/but_start"
+	           	    android:layout_width="wrap_content"
+	           	    android:layout_height="wrap_content"
+	           	    android:background="#FFFFFF"
+	           	    android:src="@drawable/ic_play" />
+			    
+				<ImageButton
+				    android:id="@+id/but_pause"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="#FFFFFF"
+				    android:paddingLeft="0dp"
+				    android:src="@drawable/ic_pause" />
+			    
+			    <ImageButton
+			        android:id="@+id/but_stop"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="256dp"
+			        android:background="#FFFFFF"
+			        android:src="@drawable/ic_stop" />
+		            
+	        </RelativeLayout>
+        </TableRow>
+        
+        <TableRow
+            android:background="#FFFFFF">
+	        
+            <TextView
+		        android:id="@+id/TextView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+        </TableRow>
+        
+        <TableRow>
+        </TableRow>
+    </TableLayout>
+    
+</FrameLayout>
+
